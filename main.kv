@@ -1,0 +1,22 @@
+MDBoxLayout:
+    orientation: 'vertical'
+    padding: 22
+    MDTextField:
+        id: txtPesquisa
+        hint_text: "Pesquisar o item ..."
+        on_text: app.filter_text(txtPesquisa.text)
+    ScrollView:
+        MDList:
+            id: box
+
+            #OneLineListItem:
+                #text: 'Título 1'
+            #OneLineListItem:
+                #text: 'Título 2'
+            #TwoLineListItem:
+                #text: 'Título 3'
+                #secondary_text: 'teste'
+            #ThreeLineListItem:
+                #text: 'Título 4'
+                #secondary_text: 'teste'
+                #tertiary_text: 'teste outra linha'
